@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <modules>
+    <OpenSearch>
+      <version>0.1.0</version>
+    </OpenSearch>
+  </modules>
+  <global>
+    <blocks>
+      <opensearch>
+        <class>OpenSearch_Block</class>
+      </opensearch>
+    </blocks>
+  </global>
+  <frontend>
+    <layout>
+      <updates>
+        <opensearch module="OpenSearch">
+          <file>opensearch.xml</file>
+        </opensearch>
+      </updates>
+    </layout>
+    <routers>
+      <opensearch>
+        <use>standard</use>
+        <args>
+          <module>OpenSearch</module>
+          <frontName>opensearch</frontName>
+        </args>
+      </opensearch>
+    </routers>
+  </frontend>
+</config>
