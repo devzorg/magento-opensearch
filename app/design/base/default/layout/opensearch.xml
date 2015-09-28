@@ -2,7 +2,7 @@
 <layout version="0.1.0">
   <default>
     <reference name="head">
-      <block type="core/template" name="opensearch" template="opensearch/meta.phtml"></block>
+      <block type="opensearch/meta" name="opensearch" template="opensearch/meta.phtml"></block>
     </reference>
   </default>
 </layout>
